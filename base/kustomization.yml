@@ -1,0 +1,21 @@
+namespace: shopease
+
+resources:
+- frontend.yml
+- backend.yml
+- frontend-svc.yml
+- backend-svc.yml
+- mysql.yml
+- mysql-svc.yml
+- mysql-pvc.yml
+- configmap.yml
+- secret.yml
+- hpa.yml
+- gatewayclass.yml
+- gateway.yml
+- httproute.yml
+- prometheus-config.yml
+- prometheus.yml
+- prometheus-svc.yml
+- grafana.yml
+- grafana-svc.yml  
