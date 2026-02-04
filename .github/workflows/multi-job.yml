@@ -1,0 +1,24 @@
+name: my first ci
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build step  
+        run: echo "my first build done"
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test for build 
+        run:  echo "my first test working"
+
+  deploy:
+     runs-on: ubuntu-latest
+
+     steps:
+       - name: deplot app step
+         run: echo "my first app deloyed"         
