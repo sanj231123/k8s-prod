@@ -19,7 +19,7 @@ jobs:
        run: echo " my first build testing working"
 
   deploy:
-     runs-on: ubunutu-latest
+     runs-on: ubuntu-latest
      needs: test
      
      steps:     
