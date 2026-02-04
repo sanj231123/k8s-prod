@@ -1,0 +1,27 @@
+name: my Project
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build step
+        run: echo " my build run working good"
+
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    
+    steps:     
+     - name: test the build        
+       run: echo " my first build testing working"
+
+  deploy:
+     runs-on: ubunutu-latest
+     needs: test
+     
+     steps:     
+      - name: deploy build apps        
+        run: echo " my deploy using build code "
