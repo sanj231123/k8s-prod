@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build for code
-        run: echo "hello, ${{ vars.MY_NAME }} 
+        run: echo "hello, ${{ vars.MY_NAME }}"
