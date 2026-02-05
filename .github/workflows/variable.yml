@@ -1,0 +1,13 @@
+name: my new variable
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubunut-latest
+    steps:
+      - name: Build for code
+        run: echo "hello, ${{ vars.MY_NAME }} 
